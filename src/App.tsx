@@ -1,18 +1,15 @@
-import { Habit } from "./components/Habit"
+// import { Habit } from "./components/Habit"
+import { Header } from './components/Header'
+import { SummaryTable } from './components/SummaryTable'
 
-// import './styles/global.css'
-import logoImage from './assets/logo.svg'
+import './styles/global.css'
 
 export function App() {
   return (
     <div className="w-screen h-screen flex justify-center items-center">
       <div className="w-full max-w-5xl px-6 flex-col gap-16">
-        <div className="w-full max-w-3xl mx-auto flex items-center justify-between">
-          <img src={logoImage} alt="Habits" />
-          <button type="button">
-            Novo hábito
-          </button>
-        </div>
+        <Header />
+        <SummaryTable />
       </div>
     </div>
   )
