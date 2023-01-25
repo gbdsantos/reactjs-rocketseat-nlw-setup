@@ -11,7 +11,7 @@ export function Header() {
 
       <Dialog.Root>
         <Dialog.Trigger
-          className="border border-violet-500 flex items-center gap-3 font-semibold rounded-lg px-6 py-4 hover:border-violet-300"
+          className="border border-violet-500 flex items-center gap-3 font-semibold rounded-lg px-6 py-4 hover:border-violet-300 transition-colors focus:outline-none focus:ring-2 focus:ring-violet-600 focus:ring-offset-2 focus:ring-offset-background"
           type="button"
         >
           <Plus className="text-violet-500" size={20} />
@@ -27,7 +27,7 @@ export function Header() {
             className="absolute p-10 bg-zinc-900 rounded-2xl w-full max-w-md top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
           >
             <Dialog.Close
-              className="absolute right-6 top-6 text-zinc-500 hover:text-zinc-200"
+              className="absolute right-6 top-6 text-zinc-500 rounded-lg hover:text-zinc-200 focus:ring-2 focus:ring-violet-600 focus:ring-offset-2 focus:ring-offset-zinc-900"
             >
               <X aria-label="Fechar" size={24} />
             </Dialog.Close>

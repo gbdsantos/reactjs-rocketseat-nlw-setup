@@ -64,13 +64,13 @@ export function HabitsList({ date, onCompletedChanged }: HabitsListProps) {
       {habitsInfo?.possibleHabits.map(habit => {
         return (
           <Checkbox.Root
-            className="flex items center gap-3 group"
+            className="flex items-center gap-3 group focus:outline-none disabled:cursor-not-allowed"
             checked={habitsInfo.completedHabits.includes(habit.id)}
             disabled={isDateInPast}
             key={habit.id}
             onCheckedChange={() => handleToggleHabit(habit.id)}
           >
-            <div className="h-8 w-8 rounded-lg flex items-center justify-center bg-zinc-900 border-2 border-zinc-800 group-data-[state=checked]:bg-green-500 group-data-[state=checked]:border-green-500">
+            <div className="h-8 w-8 rounded-lg flex items-center justify-center bg-zinc-900 border-2 border-zinc-800 group-data-[state=checked]:bg-green-500 group-data-[state=checked]:border-green-50 transition-colors group-focus:ring-2 group-focus:ring-violet-600 group-focus:ring-offset-2 group-focus:ring-offset-background">
               <Checkbox.Indicator>
                 <Check className="text-white" size={20} />
               </Checkbox.Indicator>
